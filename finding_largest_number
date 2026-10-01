@@ -1,0 +1,27 @@
+print("   ***     FINDING LARGEST NUMBER     ***   ")
+print("let the 3 numbers be a , b and c")
+a=int(input("enter the first number a "))
+b=int(input("enter the second number b "))
+c=int(input("enter the third number c"))
+def numbers(a,b,c):
+    if a>b and a>c:
+        print("a is the largest number ")
+    elif b>c and b>a:
+        print("b is the largest number ")
+    elif a==b and a>c:
+        print("a and b are equal and a and b are greater than c")
+    elif a==b and c>a:
+        print("a and b are equal and c is greater than a and b")
+    elif a==c and a>b:
+        print("a and c are equal and a and c are greater than b")
+    elif a==c and b>a:
+        print("a and c are equal and b is greater than a and c")
+    elif b==c and b>a:
+        print("b and c are equal and b and c are greater than a")
+    elif b==c and a>b:
+        print("b and c are equal and a is greater than b and c")
+    elif a==b==c:
+        print("all are equal")
+    else:
+        print("c is the largest number ")
+numbers(a,b,c)
